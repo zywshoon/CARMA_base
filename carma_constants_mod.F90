@@ -120,4 +120,4 @@ module carma_constants_mod
 	
 	!! Incloud Cloud Fraction Threshold for statistics
 	real(kind=f), parameter :: CLDFRC_INCLOUD = 0.10_f
-end module 
+end module carma_constants_mod

@@ -728,4 +728,4 @@ contains
     return
   end subroutine CARMAGROUP_Set  
   
-end module
+end module carmagroup_mod

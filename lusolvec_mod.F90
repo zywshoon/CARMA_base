@@ -95,7 +95,7 @@ module lusolvec_mod
       END DO
 !      IF (AAMAX.EQ.0._f) PAUSE 'Singular matrix.'
       IF (AAMAX.EQ.0._f) STOP 'Singular matrix.'
-      VV(I)=1./AAMAX
+      VV(I)=1._f/AAMAX
     END DO
     DO J=1,N
       IF (J.GT.1) THEN
@@ -136,7 +136,7 @@ module lusolvec_mod
       INDX(J)=IMAX
       IF(J.NE.N)THEN
         IF(A(J,J).EQ.ZEROC)A(J,J)=TINYC
-        DUMC=1./A(J,J)
+        DUMC=1._f/A(J,J)
         DO I=J+1,N
           A(I,J)=A(I,J)*DUMC
         END DO
